@@ -1,0 +1,43 @@
+.presentation {
+    display: flex;
+    width: 100%;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic-boxes {
+    margin-bottom: 2rem;
+}
+
+.topic {
+    max-width: 20rem;
+}
+
+.presentation-text {
+    max-width: 50rem;
+}
+
+.presentation-text > p {
+    font-size: 1.5rem;
+    
+    line-height: 2.5rem;
+}
+
+.presentation-img {
+    width: 35rem;
+}
+
+@media (max-width: 995px) {
+    .presentation-text {
+        max-width: 50rem;
+    }
+
+    .presentation-text > h1 {
+        font-size: 1.25rem;
+    }
+
+    footer > p {
+        font-size: .75rem;
+    }
+}
