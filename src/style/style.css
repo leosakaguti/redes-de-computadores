@@ -12,6 +12,10 @@ a.btn {
     transition: .3s !important;
 }
 
+.topic-boxes {
+    background-color: #282b30;
+}
+
 footer {
     padding: 10px 0;
 }

@@ -1,7 +1,20 @@
-.topic-boxes {
-    margin-bottom: 2rem;
+.presentation{
+    min-height: 95vh;
+}
+
+
+.presentation-text {
+    max-width: 50rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .topic {
     max-width: 40rem;
+}
+
+lottie-player {
+    width: 500px;
 }

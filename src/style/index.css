@@ -6,10 +6,6 @@
     align-items: center;
 }
 
-.topic-boxes {
-    margin-bottom: 2rem;
-}
-
 .topic {
     max-width: 20rem;
 }
@@ -20,12 +16,15 @@
 
 .presentation-text > p {
     font-size: 1.5rem;
-    
     line-height: 2.5rem;
 }
 
 .presentation-img {
     width: 35rem;
+}
+
+lottie-player {
+    width: 500px;
 }
 
 @media (max-width: 995px) {
