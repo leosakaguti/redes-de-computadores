@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="./style/topologias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/19a385d9b8.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav column-gap-2">
                     <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-globe"></i></a>
@@ -34,37 +40,62 @@
     </nav>
 
     <div class="presentation d-flex align-items-center justify-content-center">
-        <div>
-            <p class="presentation-text fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente temporibus alias fugiat laborum modi necessitatibus ducimus vitae dolores ab dignissimos dolore, ea laboriosam expedita nihil quos cum possimus? Similique ducimus corporis sit provident itaque velit. Voluptas ut distinctio consequuntur amet corrupti maiores suscipit, repellat voluptatibus? Nemo accusantium cupiditate impedit.</p>
+        <div class="presentation-text">
+            <h1 class="fw-semibold">Topologias de Rede</h1>
+            <p class="fs-3">Descrevem as diferentes formas pelas quais os dispositivos em uma rede de computadores estão interconectados. Existem várias topologias de rede, cada uma com suas próprias características e indicações. Alguns exemplos de topologias comuns incluem a topologia em barramento, em estrela, em anel, em malha e híbrida.</p>
         </div>
         <lottie-player src="https://lottie.host/1f4719ce-e225-4a29-adfc-b21c61eb6040/FEepK3JoIl.json" background="##FFFFFF" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
     </div>
 
-    <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 justify-content-evenly py-5">
-        <a class="btn btn-outline-light shadow topic" href="./src/topologias.html" data-aos="fade-up" data-aos-duration="1000">
-            <h6>Barramento</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+    <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 py-5">
+        
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Barramento</h6>
+                <p>Todos os dispositivos são conectados a um único cabo de comunicação, que funciona como um barramento. Os dados são transmitidos por todo o cabo, e cada dispositivo recebe e processa os dados relevantes para ele. Essa topologia é simples e econômica, mas pode ter problemas de desempenho quando muitos dispositivos estão conectados ao barramento.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-barramento.jpg" alt="">
+        </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/osi.html" data-aos="fade-up" data-aos-duration="1300">
-            <h6>Estrela</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1300">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Estrela</h6>
+                <p>Caracterizada pela conexão de todos os dispositivos a um ponto central, como um hub ou switch. Cada dispositivo se comunica diretamente com o ponto central, que gerencia as conexões e a transmissão dos dados. Essa topologia é mais confiável e fácil de gerenciar, mas pode ser mais cara.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-estrela.jpg" alt="">
+        </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/tcp.html" data-aos="fade-up" data-aos-duration="1600">
-            <h6>Anel</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1600">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Anel</h6>
+                <p>Conecta os dispositivos em uma estrutura em forma de anel, onde cada dispositivo está conectado diretamente aos dispositivos adjacentes. Os dados são transmitidos em uma única direção, circulando pelo anel até chegar ao destino desejado. Essa topologia é eficiente em termos de desempenho, mas pode ter problemas de escalabilidade.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-anel.jpg" alt="">
+        </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Híbrida</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1900">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Híbrida</h6>
+                <p>Combinação de dois ou mais tipos diferentes de topologias de rede, podendo fornecer os benefícios de cada topologia, ao mesmo tempo em que mitiga algumas de suas limitações. Topologias híbridas são frequentemente usadas em redes maiores, onde diferentes departamentos ou áreas da rede têm requisitos topológicos diferentes.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-hibrida.jpg" alt="">
+        </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Malha</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1900">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Malha</h6>
+                <p>Caracterizada pela conexão de cada dispositivo a vários outros dispositivos na rede, formando uma rede de malha. Essa topologia oferece redundância e resiliência, pois os dados podem ser transmitidos por diferentes caminhos. No entanto, pode ser mais complexa e cara de implementar.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-malha.jpg" alt="">
+        </div>
+
+        <div class="btn btn-outline-light shadow topic d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1900">
+            <div class="container topic-text">
+                <h6 class="fw-semibold">Árvore</h6>
+                <p>Organiza os dispositivos em uma estrutura hierárquica, semelhante a uma árvore. Um dispositivo central está conectado a outros dispositivos, que podem estar conectados a outros dispositivos, formando camadas na rede. Essa topologia é escalável e fácil de gerenciar, mas pode ser mais complexa e cara.</p>
+            </div>
+            <img class="img-fluid" src="../img/topologia-arvore.jpg" alt="">
+        </div>
     </div>
 
     <footer class="d-flex justify-content-center bg-dark">

@@ -2,10 +2,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+lottie-player {
+    height: 30rem;
+    width: auto;
 }
 
 a.btn {
@@ -22,11 +28,4 @@ footer {
 
 footer > p {
     margin: 0;
-}
-
-@media (max-width: 995px) {
-    
-    footer > p {
-        font-size: .75rem;
-    }
 }
