@@ -22,4 +22,5 @@
 
 .topic {
     max-width: 20rem;
+    cursor: auto !important;
 }

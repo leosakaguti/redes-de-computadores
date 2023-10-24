@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocolos</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/osi.css">
+    <link rel="stylesheet" href="./style/protocolos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,38 +37,105 @@
         </div>
     </nav>
 
-    <div class="presentation d-flex align-items-center justify-content-center">
-        <div>
-            <p class="presentation-text fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente temporibus alias fugiat laborum modi necessitatibus ducimus vitae dolores ab dignissimos dolore, ea laboriosam expedita nihil quos cum possimus? Similique ducimus corporis sit provident itaque velit. Voluptas ut distinctio consequuntur amet corrupti maiores suscipit, repellat voluptatibus? Nemo accusantium cupiditate impedit.</p>
+    <div class="presentation">
+        <div class="presentation-text">
+            <h1 class="fw-semibold">Protocolos</h1>
+            <p class="fs-3">Qualquer usuário pode enviar e receber mensagens instantâneas, compartilhar arquivos em seu site e acessar diversos domínios na web sem precisar aprender línguas estrangeiras. Os protocolos de internet agem como uma "língua universal" entre computadores, permitindo a comunicação sem necessidade de software adicional, independentemente do fabricante ou sistema operacional. Isso possibilita a comunicação sem problemas entre computadores na rede mundial de computadores.</p>
         </div>
-        <lottie-player src="https://lottie.host/1f4719ce-e225-4a29-adfc-b21c61eb6040/FEepK3JoIl.json" background="##FFFFFF" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+        <img class="img-fluid presentation-img" src="../img/modelo-p.png" alt="">
     </div>
 
-    <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 justify-content-evenly py-5">
-        <a class="btn btn-outline-light shadow topic" href="./src/topologias.html" data-aos="fade-up" data-aos-duration="1000">
-            <h6>Barramento</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+    <div class="tipos d-flex flex-column align-items-center">
+        <h1 class="fw-bold mt-3">Tipos</h1>
+        <div class="cards d-flex justify-content-evenly flex-wrap py-5 w-100">
+            <div class="card">
+                <div class="card-header">
+                    Camada de Aplicação
+                </div>
+                <div class="card-body">
+                    <p class="card-text">WWW (navegação web), HTTP, SMPT (emails), FTP (transferência de arquivos) e SSH. Usada pelos programas para enviar e receber dados de outros programas pela própria internet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Camada de Transporte
+                </div>
+                <div class="card-body">
+                    <p class="card-text">TCP, UDP e SCTP. Para transporte de arquivos recebidos da camada anterior. Aqui acontece a organização e a transformação deles em pacotes menores, que serão enviados à rede.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Camada de Rede
+                </div>
+                <div class="card-body">
+                    <p class="card-text">IP (IPv4 e IPv6). Os arquivos empacotados na camada anterior são recebidos e anexados ao IP da máquina que envia e que recebe os dados. Daqui, são enviados pela internet usando a próxima camada.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Camada de Estrutura Física
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Ethernet e Modem. É a camada que executa o recebimento ou envio de arquivos na web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/osi.html" data-aos="fade-up" data-aos-duration="1300">
-            <h6>Estrela</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+    <div class="topics d-flex flex-column align-items-center">
+        <h1 class="text-light fw-bold mt-3">Protocolos</h1>
+        <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 justify-content-evenly py-5">
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">TCP/IP</h6>
+                <p>Dentre todos os protocolos de rede, juntos, eles formam a base de envio e recebimento de dados por toda a internet.</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/tcp.html" data-aos="fade-up" data-aos-duration="1600">
-            <h6>Anel</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">HTTP</h6>
+                <p>Ele é o mais básico e usado para navegação em sites da internet.</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Híbrida</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">HTTPS</h6>
+                <p>O protocolo HTTPS é e funciona de forma exatamente igual ao HTTP. A diferença da letra “S” na sigla é uma camada extra de proteção, indicando que sites e domínios que possuem esse protocolo são seguros para o usuário acessar.</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Malha</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">DHCP</h6>
+                <p>Ele permite que os computadores consigam um endereço de IP automaticamente.</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">FTP</h6>
+                <p>Ele surgiu antes mesmo do padrão TCP/IP, que é a base das conexões de internet. E é o modo mais simples de transferir dados entre duas máquinas pela rede.</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">SFTP</h6>
+                <p>Ele é, basicamente, o protocolo FTP com uma camada de proteção a mais aos arquivos transferidos.</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">SSH</h6>
+                <p>É um dos protocolos específicos de segurança de troca de arquivos entre cliente e servidor.</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">POP3</h6>
+                <p>Ele é usado para mensagens eletrônicas, ou seja, os populares emails.</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">SMTP</h6>
+                <p>Voltado para o envio de mensagens eletrônicas (emails).</p>
+            </div>
+
+            <div class="btn btn-outline-light shadow topic" data-aos="fade-up" data-aos-duration="1000">
+                <h6 class="fw-semibold">IMAP</h6>
+                <p>Assim como os dois anteriores, o protocolo IMAP também é voltado para envio e recebimento de emails.</p>
+            </div>
+        </div>
     </div>
 
     <footer class="d-flex justify-content-center bg-dark">

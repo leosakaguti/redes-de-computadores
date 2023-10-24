@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCP/IP</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/osi.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,38 +36,40 @@
         </div>
     </nav>
 
-    <div class="presentation d-flex align-items-center justify-content-center">
-        <div>
-            <p class="presentation-text fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente temporibus alias fugiat laborum modi necessitatibus ducimus vitae dolores ab dignissimos dolore, ea laboriosam expedita nihil quos cum possimus? Similique ducimus corporis sit provident itaque velit. Voluptas ut distinctio consequuntur amet corrupti maiores suscipit, repellat voluptatibus? Nemo accusantium cupiditate impedit.</p>
+    <div class="presentation">
+        <div class="presentation-text">
+            <h1 class="fw-semibold">Modelo TCP/IP</h1>
+            <p class="fs-3">O modelo TCP/IP, em contraste com o modelo OSI, é uma abordagem mais enxuta e pragmática para a arquitetura de redes de computadores. Enquanto o modelo OSI possui sete camadas distintas, o modelo TCP/IP é composto por quatro camadas principais: a camada de Link, a camada de Internet, a camada de Transporte e a camada de Aplicação. Essa simplicidade é uma das razões pelas quais o modelo TCP/IP se tornou amplamente adotado e a espinha dorsal da internet.
+
+            </p>
         </div>
-        <lottie-player src="https://lottie.host/1f4719ce-e225-4a29-adfc-b21c61eb6040/FEepK3JoIl.json" background="##FFFFFF" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+        <img class="img-fluid presentation-img" src="../img/network.png" alt="Imagem representativa TCP / IP" >
     </div>
 
-    <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 justify-content-evenly py-5">
-        <a class="btn btn-outline-light shadow topic" href="./src/topologias.html" data-aos="fade-up" data-aos-duration="1000">
-            <h6>Barramento</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+    <div class="topics d-flex flex-column align-items-center">
+        <h1 class="text-light fw-bold mt-3">Camadas</h1>
+        <div class="topic-boxes container-fluid d-flex flex-wrap gap-3 justify-content-evenly py-5">
+            
+            <div class="btn btn-outline-light shadow topic" href="./src/osi.html" data-aos="fade-up" data-aos-duration="500">
+                <h6 class="fw-semibold">Aplicação</h6>
+                <p>É onde os aplicativos se comunicam com a rede.</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/osi.html" data-aos="fade-up" data-aos-duration="1300">
-            <h6>Estrela</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="600">
+                <h6 class="fw-semibold">Transporte</h6>
+                <p>Garante a entrega confiável de dados. Exemplo: Transferência de arquivos (usando TCP) e chamadas de voz via Internet (usando UDP).</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/tcp.html" data-aos="fade-up" data-aos-duration="1600">
-            <h6>Anel</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="700">
+                <h6 class="fw-semibold">Rede</h6>
+                <p>Roteia pacotes de dados entre redes. Exemplo: Roteadores na Internet usam o protocolo IP para encaminhar pacotes.</p>
+            </div>
 
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Híbrida</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
-
-        <a class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="1900">
-            <h6>Malha</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo molestiae non quia, magnam dolorum labore vel doloremque ad, suscipit officiis officia eaque aspernatur laborum maiores, omnis sunt quasi natus minus tempore? Provident soluta facere id quidem, velit ut. Quibusdam ut deleniti nemo voluptatem, maiores mollitia. Totam cupiditate perspiciatis tenetur?</p>
-        </a>
+            <div class="btn btn-outline-light shadow topic" href="./src/protocolos.html" data-aos="fade-up" data-aos-duration="800">
+                <h6 class="fw-semibold">Aplicação</h6>
+                <p>Lida com a comunicação dentro de uma rede local. Exemplo: Redes Ethernet ou conexões Wi-Fi, onde dispositivos se conectam diretamente.</p>
+            </div>
+        </div>
     </div>
 
     <footer class="d-flex justify-content-center bg-dark">

@@ -1,0 +1,12 @@
+.tipos {
+    width: 100vw;
+}
+
+.card {
+    max-width: 22rem;
+}
+
+.topic {
+    min-height: 15rem;
+    cursor: auto !important;
+}

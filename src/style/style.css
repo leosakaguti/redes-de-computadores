@@ -18,6 +18,10 @@ a.btn {
     transition: .3s !important;
 }
 
+div.btn {
+    transition: .3s !important;
+}
+
 .topic-boxes {
     background-color: #282b30;
 }
