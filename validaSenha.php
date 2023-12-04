@@ -10,21 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if the submitted email and password match the expected values
     if ($submittedEmail === $expectedEmail && $submittedPassword === $expectedPassword) {
-        
+        header("Location: ./menu.html");
     } else {
         header("Location: ./");
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENTROU</title>
-</head>
-<body>
-    <h1 style="color: green; font-size: 140px;">ENTROU</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/04854XqcfCY?si=HvHuC2YABqNprJ6R&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
-</html>
